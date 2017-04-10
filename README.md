@@ -1,10 +1,10 @@
-# Code for the paper "Learning to act by predicting the future" by Alexey Dosovitskiy and Vladlen Koltun
+# Code for the paper "Learning to Act by Predicting the Future" by Alexey Dosovitskiy and Vladlen Koltun
 
 If you use this code or the provided environments in your research, please cite the following paper:
 
     @inproceedings{DK2017,
     author    = {Alexey Dosovitskiy and Vladlen Koltun},
-    title     = {Learning to act by predicting the future},
+    title     = {Learning to Act by Predicting the Future},
     booktitle = {International Conference on Learning Representations (ICLR)},
     year      = {2017}
     }
@@ -46,8 +46,14 @@ If you use this code or the provided environments in your research, please cite 
 
         taskset -c 1 python3 run_exp.py train
 
-## Troubleshooting
+## Remarks
 
-Note that results may vary quite significantly (in our experiments, up to roughly relative 15%) across training runs.
+- For experiments in the paper we used a slightly modified ViZDoom version which provided the first post-mortem measrements. Surprisingly, this turns out to make a noticeable difference for training. For this reason the results with this code and default ViZDoom may slightly differ from the results in the paper.
+
+- Results may vary quite significantly across training runs: in our experiments, up to roughly relative 15%.
+
+- In battle scenarios reward provided by vizdoom is set to be simply the number of frags. For training the baseline approaches we did not use this reward provided by the environment, but rather a weighted average of the three measurements, same as for our approach.
+
+## Troubleshooting
 
 Please send bug reports to Alexey Dosovitskiy ( adosovitskiy@gmail.com )
