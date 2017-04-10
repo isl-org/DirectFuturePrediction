@@ -1,0 +1,6 @@
+model_checkpoint_path: "predictor.model-810000"
+all_model_checkpoint_paths: "predictor.model-770000"
+all_model_checkpoint_paths: "predictor.model-780000"
+all_model_checkpoint_paths: "predictor.model-790000"
+all_model_checkpoint_paths: "predictor.model-800000"
+all_model_checkpoint_paths: "predictor.model-810000"
