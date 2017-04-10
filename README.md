@@ -48,11 +48,11 @@ If you use this code or the provided environments in your research, please cite 
 
 ## Remarks
 
-- For experiments in the paper we used a slightly modified ViZDoom version which provided the first post-mortem measrements. Surprisingly, this turns out to make a noticeable difference for training. For this reason the results with this code and default ViZDoom may slightly differ from the results in the paper.
+- For experiments in the paper we used a slightly modified ViZDoom version which provided a post-mortem measurement. This turns out to make a difference for training. For this reason, the results with this code and the default ViZDoom verson may differ slightly from the results in the paper.
 
-- Results may vary quite significantly across training runs: in our experiments, up to roughly relative 15%.
+- Results may vary across training runs: in our experiments, up to roughly 15%.
 
-- In battle scenarios reward provided by vizdoom is set to be simply the number of frags. For training the baseline approaches we did not use this reward provided by the environment, but rather a weighted average of the three measurements, same as for our approach.
+- In battle scenarios, the default reward provided by ViZDoom is the number of frags. For training the baseline approaches we did not use this reward, but rather a weighted average of the three measurements, same as for our approach, for a fair comparison.
 
 ## Troubleshooting
 
