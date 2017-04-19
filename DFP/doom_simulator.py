@@ -119,7 +119,7 @@ class DoomSimulator:
                 
             if self.resize:
                 if self.num_channels == 1:
-                    if raw_img is None:
+                    if raw_img is None or raw_img[0] is None:
                         img = None
                     else:
                         img = cv2.resize(raw_img[0], (self.resolution[0], self.resolution[1]))[None,:,:]
